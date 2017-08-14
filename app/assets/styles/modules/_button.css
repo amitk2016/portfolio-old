@@ -1,0 +1,29 @@
+.button{
+	border:#fff 2px solid;
+	color:#fff;
+	text-decoration: none;
+	padding:0.75rem 1.2rem ;
+	display: inline-block;
+	border-radius:3px;
+	transition:all 0.3s ease-out;
+	border-radius: 30px;
+
+	&__large{
+		font-size:0.9rem;
+		font-weight:300;
+		padding:0.6rem 1.2rem ;
+
+		@mixin mobile{
+			font-size: 1.2rem;
+			font-weight:300;
+			padding:0.75rem 1.6rem ;
+		}
+	}
+
+	&:hover{
+		background-color:#fff;
+		color:#3d3d3d;
+		text-decoration: none;
+
+	}
+}

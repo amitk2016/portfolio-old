@@ -1,0 +1,18 @@
+@define-mixin mobile {
+	@media (min-width:550px){
+		@mixin-content;
+	}
+}
+
+@define-mixin tablet {
+	@media (min-width:730px){
+		@mixin-content;
+	}
+}
+
+
+@define-mixin desktop {
+	@media (min-width:960px){
+		@mixin-content;
+	}
+}
