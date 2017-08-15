@@ -1,0 +1,6 @@
+.image{
+
+	&__circle{
+		border-radius:50%;
+	}
+}

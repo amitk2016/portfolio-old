@@ -3,3 +3,11 @@ body{
 	color:#66625B;
 	margin:0;
 }
+img{
+	max-width:100%;
+	height:auto;
+}
+
+*{
+	box-sizing: border-box;
+}

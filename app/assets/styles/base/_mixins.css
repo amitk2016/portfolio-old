@@ -16,3 +16,31 @@
 		@mixin-content;
 	}
 }
+
+@define-mixin clearfix {
+	&::after{
+		content:"";
+		clear:both;
+		display:table;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

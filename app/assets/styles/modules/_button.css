@@ -7,14 +7,15 @@
 	border-radius:3px;
 	transition:all 0.3s ease-out;
 	border-radius: 30px;
+	cursor:pointer;
 
 	&__large{
-		font-size:0.9rem;
+		font-size:0.8rem;
 		font-weight:300;
 		padding:0.6rem 1.2rem ;
 
 		@mixin mobile{
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 			font-weight:300;
 			padding:0.75rem 1.6rem ;
 		}
@@ -26,4 +27,21 @@
 		text-decoration: none;
 
 	}
+
+	&__coloured{
+		color:#3d3d3d;
+		border:#3d3d3d 2px solid;
+		
+		&:hover{
+			background-color:#3d3d3d;
+			color:#fff;
+			text-decoration: none;
+		}
+	}
 }
+
+
+
+
+
+
