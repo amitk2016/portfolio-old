@@ -6,7 +6,17 @@
 	max-width:1236px;
 	margin-left: auto;
 	margin-right: auto;
+	
 
+	&__noPaddingUntillMedium{
+		padding-left:0px;
+		padding-right:0px;
+
+		@mixin mobile{
+			padding-left:18px;
+			padding-right:18px;
+		}
+	}
 	
 	&__medium{
 		max-width:976px;
@@ -23,5 +33,10 @@
 		margin-bottom:1.2rem;	
 		}
 		
+	}
+
+	&__lessPadding{
+		padding-left:0px;
+		padding-right:0px;
 	}
 }

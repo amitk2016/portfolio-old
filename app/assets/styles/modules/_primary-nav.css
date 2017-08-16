@@ -1,0 +1,80 @@
+.primary-nav{
+
+	&__pull_right{
+		
+
+		@mixin mobile{
+			float: right;
+		}
+	}
+
+	ul{
+		margin:0;
+		padding:0;
+		@mixin clearfix;
+	}
+
+	li{
+		list-style: none;
+		/*display: inline-block;*/
+		padding:20px 0;
+
+		@mixin mobile{
+			float: left;
+			display: block;
+			margin-bottom:0;
+			padding:0px 22px;
+			background-color: transparent;
+		}
+	}
+	a{
+		color:rgba(255,255,255,.6);
+		text-decoration: none;
+		font-weight: 300;
+		font-size:1.1rem;
+
+		@mixin mobile{
+			font-size: 1rem;
+			color:white;
+			&:hover{
+				color:$mainColor;
+			}
+			
+		}
+	}
+
+	&__icon{
+		display: inline-block;
+	  font-size: 1.5em;
+	  margin-right: 1.5em;
+	  margin-left: -1.5em;
+	  width: 1.1em;
+	  text-align:center;
+	  color: rgba(255,255,255,.6);
+
+		@mixin mobile{
+			display:none !important;
+		}
+	}
+
+	&__5th-item{
+		margin-left:55px;
+
+		@mixin mobile{
+			margin-left: 0;
+		}
+	}
+
+	&__6th-item{
+		margin-left:20px;
+
+		@mixin mobile{
+			margin-left: 0;
+		}
+		
+	}
+
+
+}
+
+

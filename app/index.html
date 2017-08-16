@@ -9,32 +9,37 @@
 		<script src="https://use.fontawesome.com/3ea3387309.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
+		<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+		
 		<link rel="stylesheet" href="temp/styles/styles.css">
 	</head>
 	<body>
 
-	<header id="home">
-		
-		
-
-			<nav>
-				<div class="logo">
-					<a href="#home"><img src="assets/images/logo.png"  alt="logo-image"></a>
-				</div>
-				<div class="mobile-menu">
-					
-				</div>
-
-				<a href="#home">Home</a>
-				<a href="#about-1">About</a>
-				<a href="#skills">Skills</a>
-				<a href="#work">Work</a>
-				<a href="#testimonial">Testimonials</a>
-				<a href="#contact">Contact</a>
-                <!-- <a href="sample.html">Sample</a> -->
-			</nav>
-		
+	<header id="home" class="site-header">
+		<div class="">
+			<div class="site-header__logo">
+				<a href="#home"><img src="assets/images/logo.png"  alt="logo-image"></a>
+			</div>
+			<div class="site-header__menuIcon">
+				<!-- <div class="site-header__menuIcon__top"></div> -->
+				<div class="site-header__menuIcon__middle"></div>
+				<!-- <div class="site-header__menuIcon__bottom"></div> -->
+			</div>
+			<div class="site-header__menuContent">
+				<nav class="primary-nav primary-nav__pull_right">
+					<ul>
+						<li><a href="#home"><i class="fa fa-home primary-nav__icon"></i>Home</a></li>
+						<li><a href="#about-1"><i class="fa fa-info primary-nav__icon"></i>About</a></li>
+						<li><a href="#skills"><i class="fa fa-pencil primary-nav__icon"></i>Skills</a></li>
+						<li><a href="#work"><i class="fa fa-tasks primary-nav__icon"></i>Work</a></li>
+						<li class="primary-nav__5th-item"><a href="#testimonial"><i class="fa fa-quote-left primary-nav__icon"></i>Testimonials</a></li>
+						<li class="primary-nav__6th-item"><a href="#contact"><i class="fa fa-envelope primary-nav__icon"></i>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 		
 		<div class="large-hero">
 			<div class="large-hero__bgColor">
@@ -44,13 +49,13 @@
 					<div class="wrapper">
 						<h1 class="large-hero__title">Amit Kumar</h1>
 						<p class="large-hero__subtitle">Full Stack Developer</p>
-						<p><a href="#" class="button button__large">Get in Touch</a></p>
+						<p><a href="tel:+64221773828" class="button button__large"><i class="fa fa-phone fa-1x large-hero__mailIcon"></i>Get in Touch</a></p>
 					</div>	
 				</div>		
 		</div>
 		
 		
-	</header>
+	
 
 	<section class="about page-section" id="about-1">
 		<div class="wrapper wrapper__medium">
@@ -58,34 +63,28 @@
 			<div class="wrapper wrapper__centered">
 				<img src="assets/images/profile.jpg" alt="profile-pic of amit kumar" class="image image__circle" width="100">
 			</div>
-			<div class="generic-content-container">
-				<p>Hi I'm Amit , design thinking full-stack developer with a passion for creating websites. I'm currently living in Wellington, but originally from India.
-				First fell in love with web design one year ago simply because it made my Design and Coding skills come alive. Since then I have been hooked.My focus for now is heavily in both frontend and backend web development.
+			<div class="generic-content-container wrapper">
+				<p>Hi, I’m Amit, a Full Stack developer living in Wellington. I spend my days with my hands in many different areas of web development from back-end programming (PHP) to front end engineering (HTML, CSS, and jQuery/Javascript) and user experience.I’m extremely passionate about web development and design in all it’s forms and helping my clients build and improve their online presence.Aside from web development, I enjoy spending my time with my family, traveling and playing & watching sports.
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="quote">
-		<p class="text-center"><q><i>Live as if you were to die tomorrow. Learn as if you were to live forever.</i></q><span>- Mahatma Gandhi</span></p>
-		<h5 class="text-center"></h5>
-	</section>
-
 	<section class="skills">
 		<div >
-			<h1 class="headline headline__centered">My Skills</h1>
+			<h1 class="headline headline__centered">Skills</h1>
 			  <div class="wrapper wrapper__medium wrapper__centered">
-				    <div class="skills__accordian" id="accordian">
+				    <div class="skills__accordian row row__gutters_small" id="accordian">
 						    	
-				    	<div class="skills__buttonsDiv">
+				    	<div class="skills__buttonsDiv row__medium-4">
 				    		<a href="#design-tab" class="button button__coloured">Design</a>
 				    		
 				    	</div>
-				    	<div class="skills__buttonsDiv">
+				    	<div class="skills__buttonsDiv row__medium-4">
 				    		<a href="#development-tab" class="button button__coloured">Development</a>
 				    		
 				    	</div>
-				    	<div class="skills__buttonsDiv">
+				    	<div class="skills__buttonsDiv row__medium-4">
 					    	<a href="#user-tab" class="button button__coloured">User-focused Strategy</a>
 				    	</div>
 						    	
@@ -109,7 +108,7 @@
 				  			</ul>
 				  		</div>
 				  		<div class="row__medium-8 row__secondDiv">
-				  			<img src="http://placekitten.com/g/400/300" class="image" />
+				  			<img src="assets/images/skills-1.png" class="image" style="max-height: 350px;" />
 				  		</div>	
 			  		</div>
 
@@ -148,34 +147,34 @@
 
 	<section class="work container-fluid">
 		<div class="row no-gutters">	
-			<h1 class="skills__heading text-center">Projects</h1>
+			<h1 class="skills__heading headline headline__centered ">Projects</h1>
 			
-				<div class="col-sm-4 work__each_work item-1">
-					<img src="assets/images/sparrow.png" class="img-responsive" />
-				</div>
-			
+			<div class="row__medium-4 work__each_work item-1">
+				<img src="assets/images/sparrow.png" class="work_image" />
+			</div>
+		
 			
 
-			<div class="col-sm-4 work__each_work item-2">
-				<img src="assets/images/fttl.jpg" class="img-responsive" />
+			<div class="row__medium-4 work__each_work item-2">
+				<img src="assets/images/fttl.jpg" class="work_image" />
 				
 			</div>
-			<div class="col-sm-4 work__each_work item-3">
-				<img src="assets/images/mobile-zone.png" class="img-responsive" />
+			<div class="row__medium-4 work__each_work item-3">
+				<img src="assets/images/mobile-zone.png" class="work_image" />
 				
 			</div>
 		</div>
 		<div class="row no-gutters">	
-			<div class="col-sm-4 work__each_work item-4">
-				<img src="assets/images/president.jpg" class="img-responsive" />
+			<div class="row__medium-4 work__each_work item-4">
+				<img src="assets/images/president.jpg" class="work_image" />
 				
 			</div>
-			<div class="col-sm-4 work__each_work item-5">
-				<img src="assets/images/krish-dance.png" class="img-responsive" />
+			<div class="row__medium-4 work__each_work item-5">
+				<img src="assets/images/krish-dance.png" class="work_image" />
 				
 			</div>
-			<div class="col-sm-4 work__each_work item-6">
-				<img src="assets/images/bm-motors.jpg" class="img-responsive" />
+			<div class="row__medium-4 work__each_work item-6">
+				<img src="assets/images/bm-motors.jpg" class="work_image" />
 				
 			</div>
 		</div>
@@ -186,41 +185,72 @@
 
 
 		
-	<section class="testimonial" id="testimonial">
-		<div class="row">
-			<h2 class="text-center">Testimonials</h2>
-			<p class="clearfix"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla, vero corporis modi, soluta nobis placeat reprehenderit porro, debitis incidunt maiores quae dolorem. Expedita hic qui fugit, aliquam sit tenetur. </q><span class="pull-right">-Alexander Sparrow</span></p>
-
-			<p class="clearfix"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla, vero corporis modi, soluta nobis placeat reprehenderit porro, debitis incidunt maiores quae dolorem. Expedita hic qui fugit, aliquam sit tenetur. </q><span class="pull-right">-Alexander Sparrow</span></p>
-
-			<p class="clearfix"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla, vero corporis modi, soluta nobis placeat reprehenderit porro, debitis incidunt maiores quae dolorem. Expedita hic qui fugit, aliquam sit tenetur. </q><span class="pull-right">-Alexander Sparrow</span></p>
+	<section class="page-section page-section__testimonials page-section__noPaddingUntilMobile" id="testimonial">
+	<div class="wrapper wrapper__noPaddingUntillMedium">
+		<h2 class="headline headline__centered headline--no_Tmargin">Testimonials</h2>
+		<div class="row row__gutters row__equal-heightAtMedium row__gutters_small row__Tpadding">
+			<div class="row__medium-4">
+				<div class="testimonial">
+					<div class="testimonial__photo">
+						<img src="http://lorempixel.com/100/100" alt="">
+					</div>
+					<h2 class="testimonial__title">Ben Abbott</h2>
+					<h3 class="testimonial__subtitle">Yoobee School</h3>
+					<p class="testimonial__text">I had the pleasure of being Amit's Web Development tutor for one year during 2016. Amit has a keen eye for design and is able to build his ideas into real working products in a timely manner. Amit was always ready to solve new problems and try new things.</p>
+				</div>
+				
+			</div>
+			<div class="row__medium-4">
+				<div class="testimonial">
+					<div class="testimonial__photo">
+						<img src="http://lorempixel.com/100/100" alt="">
+					</div>
+					<h2 class="testimonial__title">Andrew Sparrow</h2>
+					<h3 class="testimonial__subtitle">Tournville</h3>
+					<p class="testimonial__text">Amit is truly a professional web designer who designs sites from scratch, giving each and every design a unique touch. The reason we picked him as our web designer is because he is capable of bringing in fresh and unique ideas in presenting website contents, layout and the flow of information.</p>
+				</div>
+				
+			</div>
+			<div class="row__medium-4">
+				<div class="testimonial testimonial__last">
+					<div class="testimonial__photo">
+						<img src="http://lorempixel.com/100/100" alt="">
+					</div>
+					<h2 class="testimonial__title">Mike Hanagen</h2>
+					<h3 class="testimonial__subtitle">ResumePlus</h3>
+					<p class="testimonial__text">Amit has worked for me on two websites, On both projects, I found Amit to be a fast and efficient programmer, with a good eye for design. The first website had a user-friendly interface and simple shopping elements. The second was equally well laid out, and his suggestions for streamlining the information contained made for a beautiful and easily navigated website.I would highly recommend Amit as a web-designer and look forward to working with him again.</p>
+				</div>
+			</div>
 		</div>
+	</div>
 	</section>
 
-	<section class="contact" id="contact">
-		<div class="overlay-contact">
-			<h2 class="text-center contact-heading">Contact</h2>
-			<div class="row contact-row">
-				<div class="col-md-4 text-center contact-text">
-					<span class="fa-stack fa-lg">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-map-o fa-stack-1x fa-inverse"></i>
-					</span>
-					Wellington, New Zealand
-				</div>
-				<div class="col-md-4 text-center contact-text">
-					<span class="fa-stack fa-lg">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-					</span>
-					amit.k03377@gmail.com
-				</div>
-				<div class="col-md-4 text-center contact-text">
-					<span class="fa-stack fa-lg">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-					</span>
-				+64221773828
+	<section class="contact page-section page-section__contact" id="contact">
+		<div class="page-section__contactOverlay">
+			<h2 class="headline headline__centered headline__white">Contact</h2>
+			<div class="wrapper wrapper__centered">
+				<div class="row row__gutters_small row__text">
+					<div class="row__medium-4">
+						<span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x fb-icon"></i>
+						  <i class="fa fa-map-o fa-stack-1x"></i>
+						</span>
+						<p>Wellington, New Zealand</p>
+					</div>
+					<div class="row__medium-4">
+						<span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x mail-icon"></i>
+						  <i class="fa fa-envelope-o fa-stack-1x"></i>
+						</span>
+						<p>amit.k03377@gmail.com</p>
+					</div>
+					<div class="row__medium-4">
+						<span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x map-icon"></i>
+						  <i class="fa fa-phone fa-stack-1x"></i>
+						</span>
+						<p>+64221773828</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -230,7 +260,7 @@
 	      &zoom=17
 	      &key=AIzaSyA1acW199pwVazt0tPCXVczj-wAw1CXLZ0">
 	  	</iframe> -->
-		  	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:356px;'><div id='gmap_canvas' style='height:356px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="https://privacypolicygenerator.info">privacy policy generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-41.32667951672994,174.7986829485351),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-41.32667951672994,174.7986829485351)});infowindow = new google.maps.InfoWindow({content:'<strong>Miramar</strong><br>miramar,wellington<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		  	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;'><div id='gmap_canvas' style='height:300px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="https://privacypolicygenerator.info">privacy policy generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-41.32667951672994,174.7986829485351),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-41.32667951672994,174.7986829485351)});infowindow = new google.maps.InfoWindow({content:'<strong>Miramar</strong><br>miramar,wellington<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 		
 	</section>
 
@@ -247,12 +277,13 @@
 
 
 
-	<footer>
-		<div class="text-center"><a href="#" class="back-to-top"><img src="assets/images/up-arrow.png" alt="back to top button" width="60"></a></div>
-
-		
+	<footer class="site-footer">
+		<div class="wrapper">
+			<p class="site-footer__text">&copy; 2017 Amit Kumar </p>
+			<a href="#" class="back-to-top site-footer__backToTop"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+		</div>
 	</footer>
-
-<script type="text/javascript" src="js/functions.js"></script>
+<script src="/temp/scripts/App.js"></script>
+<!-- <script type="text/javascript" src="js/functions.js"></script> -->
 </body>
 </html>

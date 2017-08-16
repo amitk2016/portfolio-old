@@ -1,12 +1,32 @@
 .row{
 	@mixin clearfix;
 
+	&__Tpadding{
+		padding-top:50px;
+	}
+
 	&__gutters {
 		margin-right:-65px;
 	}
 
+	&__gutters_small{
+		margin-right:-45px;
+	}
+
+	&__gutters-large {
+		margin-right:-100px;
+	}
+
 	&__gutters > div {
 		padding-right:65px;
+	}
+
+	&__gutters_small > div{
+		padding-right:45px;
+	}
+
+	&__gutters-large > div {
+		padding-right:100px;
 	}
 
 	/*&__firstDiv{ 
@@ -24,10 +44,47 @@
 		float:left;
 		width:33.33%;
 		}
+
+		&__medium-4-larger{
+			width:37%;
+		}
+		
+		&__medium-6{
+			float:left;
+			width:50%;
+		}
+
 		&__medium-8{
 			float: left;
 			width:66.66%;
 		}
 	}
+
+
+	&__text{
+		/*text-align:left;*/
+		& > div{
+			margin-bottom: 2rem;
+
+		}
+
+		@mixin mobile{
+			text-align: center;
+		}
+	}
+
+	/*Equal hieght boxes */
+	&__equal-heightAtMedium{
+
+		@mixin tablet{
+			display:flex;
+		}
+
+		& > div{
+			float: none;
+			display: flex;
+		}
+	}
+
 	
 }
