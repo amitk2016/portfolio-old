@@ -14,12 +14,12 @@
 
 		<link rel="stylesheet" href="temp/styles/styles.css">
 	</head>
-	<body>
+	<body id="home">
 
-	<header id="home" class="site-header">
+	<header class="site-header">
 		<div class="">
 			<div class="site-header__logo">
-				<a href="#home"><img src="assets/images/logo.png"  alt="logo-image"></a>
+				<a class="site-header__logoLink" href="#home"><img src="assets/images/logo.png"  alt="logo-image"></a>
 			</div>
 			<div class="site-header__menuIcon">
 				<!-- <div class="site-header__menuIcon__top"></div> -->
@@ -30,11 +30,11 @@
 				<nav class="primary-nav primary-nav__pull_right">
 					<ul>
 						<li><a href="#home"><i class="fa fa-home primary-nav__icon"></i>Home</a></li>
-						<li><a href="#about-1"><i class="fa fa-info primary-nav__icon"></i>About</a></li>
-						<li><a href="#skills"><i class="fa fa-pencil primary-nav__icon"></i>Skills</a></li>
-						<li><a href="#work"><i class="fa fa-tasks primary-nav__icon"></i>Work</a></li>
-						<li class="primary-nav__5th-item"><a href="#testimonial"><i class="fa fa-quote-left primary-nav__icon"></i>Testimonials</a></li>
-						<li class="primary-nav__6th-item"><a href="#contact"><i class="fa fa-envelope primary-nav__icon"></i>Contact</a></li>
+						<li><a href="#about" id="about-link"><i class="fa fa-info primary-nav__icon"></i>About</a></li>
+						<li><a href="#skills" id="skills-link"><i class="fa fa-pencil primary-nav__icon"></i>Skills</a></li>
+						<li><a href="#work" id="work-link"><i class="fa fa-tasks primary-nav__icon"></i>Work</a></li>
+						<li class="primary-nav__5th-item"><a href="#testimonial" id="testimonial-link"><i class="fa fa-quote-left primary-nav__icon"></i>Testimonials</a></li>
+						<li class="primary-nav__6th-item"><a href="#contact" id="contact-link"><i class="fa fa-envelope primary-nav__icon"></i>Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -57,7 +57,7 @@
 		
 	
 
-	<section class="about page-section" id="about-1">
+	<section class="about page-section page-scroll" data-matching-link="#about-link" id="about">
 		<div class="wrapper wrapper__medium">
 			<h2 class="headline headline__centered headline--no_Tmargin">About</h2>
 			<div class="wrapper wrapper__centered">
@@ -70,7 +70,7 @@
 		</div>
 	</section>
 
-	<section class="skills">
+	<section class="skills page-scroll" data-matching-link="#skills-link" id="skills">
 		<div >
 			<h1 class="headline headline__centered">Skills</h1>
 			  <div class="wrapper wrapper__medium wrapper__centered">
@@ -145,7 +145,7 @@
 		
 	</section>
 
-	<section class="work container-fluid">
+	<section class="work container-fluid page-scroll" data-matching-link="#work-link" id="work">
 		<div class="row no-gutters">	
 			<h1 class="skills__heading headline headline__centered ">Projects</h1>
 			
@@ -163,25 +163,40 @@
 
 			<div class="row__medium-4 work__each_work item-2">
 				<img src="assets/images/fttl.jpg" class="work_image" />
-				
+				<div class="item-2__hoverContent">
+					<p class="item-2__hovertext">Fly to the Limit</p>
+					<button class="button">click here</button>
+				</div>
 			</div>
 			<div class="row__medium-4 work__each_work item-3">
 				<img src="assets/images/mobile-zone.png" class="work_image" />
-				
+				<div class="item-3__hoverContent">
+					<p class="item-3__hovertext">MobileZone</p>
+					<button class="button">click here</button>
+				</div>
 			</div>
 		</div>
 		<div class="row no-gutters">	
 			<div class="row__medium-4 work__each_work item-4">
 				<img src="assets/images/president.jpg" class="work_image" />
-				
+				<div class="item-4__hoverContent">
+					<p class="item-4__hovertext">President</p>
+					<button class="button">click here</button>
+				</div>
 			</div>
 			<div class="row__medium-4 work__each_work item-5">
 				<img src="assets/images/krish-dance.png" class="work_image" />
-				
+				<div class="item-5__hoverContent">
+					<p class="item-5__hovertext">Krish Dance</p>
+					<button class="button">click here</button>
+				</div>
 			</div>
 			<div class="row__medium-4 work__each_work item-6">
 				<img src="assets/images/bm-motors.jpg" class="work_image" />
-				
+				<div class="item-6__hoverContent">
+					<p class="item-6__hovertext">Bm-Motors</p>
+					<button class="button">click here</button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -191,7 +206,7 @@
 
 
 		
-	<section class="page-section page-section__testimonials page-section__noPaddingUntilMobile" id="testimonial">
+	<section class="page-section page-section__testimonials page-section__noPaddingUntilMobile page-scroll" data-matching-link="#testimonial-link" id="testimonial">
 	<div class="wrapper wrapper__noPaddingUntillMedium">
 		<h2 class="headline headline__centered headline--no_Tmargin">Testimonials</h2>
 		<div class="row row__gutters row__equal-heightAtMedium row__gutters_small row__Tpadding">
@@ -231,7 +246,7 @@
 	</div>
 	</section>
 
-	<section class="contact page-section page-section__contact" id="contact">
+	<section class="contact page-section page-section__contact page-scroll" data-matching-link="#contact-link" id="contact">
 		<div class="page-section__contactOverlay">
 			<h2 class="headline headline__centered headline__white">Contact</h2>
 			<div class="wrapper wrapper__centered">

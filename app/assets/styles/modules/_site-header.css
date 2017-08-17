@@ -13,12 +13,31 @@
 
 	@mixin mobile{
 		background-color: rgba(0,0,0,0.2);
+		position: fixed;
+		transform-origin: 0% 0%;
+
+		&--dark{
+			background-color: rgba(0,0,0,0.9);
+			transform:scaleY(0.97);
+		}
+
+		&--dark ul li a {
+			font-size:0.97rem;
+		}
 	}
 
 	&__logo{
 		width:40px;
 		position: absolute;
 		top:10px;
+		transition: transform 0.3s ease-out;
+
+		@mixin mobile{
+
+			.site-header--dark & {
+				transform:scale(0.92);
+			}
+		}
 	}
 
 
