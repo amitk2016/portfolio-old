@@ -11,6 +11,8 @@
 @import "modules/_row";
 @import "modules/_generic-content-container";
 @import "modules/_testimonial";
+@import "modules/_work";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_site-footer";
+@import "modules/_reveal-item";
