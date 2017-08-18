@@ -15,9 +15,10 @@
 		padding:0.6rem 1.2rem ;
 
 		@mixin mobile{
-			font-size: 1.1rem;
+			font-size:0.8rem;
 			font-weight:300;
 			padding:0.75rem 1.6rem ;
+			text-transform: uppercase;
 		}
 	}
 

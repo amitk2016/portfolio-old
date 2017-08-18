@@ -59,7 +59,11 @@
 			width:66.66%;
 		}
 	}
-
+	
+	&__6{
+			float:left;
+			width:50%;
+		}
 
 	&__text{
 		/*text-align:left;*/

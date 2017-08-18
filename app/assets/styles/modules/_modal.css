@@ -1,0 +1,89 @@
+.modal{
+	position:fixed;
+	z-index: 5;
+	background-color: rgba($mainColor,0.94);
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-y: auto;
+	opacity:0;
+	visibility: hidden;
+	transform: scale(1.2);
+	transition: all 0.3s ease-out;	
+	
+	&--is-visible{
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+
+	&__contentBox{
+		padding:18px;
+		max-width:1236px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		top:50%;
+		transform: translateY(-50%);
+
+		&--narrow{
+			max-width: 500px;
+			padding:28px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+	&__text{
+		line-height: 1.65;
+		font-size:0.8rem;
+		font-weight: 300;
+		max-width:620px;
+		margin-left: auto;
+		margin-right: auto;
+		color:white;
+
+		@mixin tablet{
+			font-size:0.9rem;
+			
+		}
+	}
+
+
+	&__buttons{
+	  background-color:$mainOrange;
+	  color: #FFF;
+	  border-radius:4px;
+	  text-decoration: none;
+	  padding: .75rem 1.2rem;
+	  display: inline-block;
+	}
+
+
+	&__image{
+
+		@mixin tablet{
+			height:300px;
+
+		}
+		
+	}
+
+	&__close{
+		position: absolute;
+		top:25px;
+		right:45px;
+		color:white;
+		font-size:2.2rem;
+		transform:scaleX(1.2);
+		transform-origin: 100% 0;
+		cursor: pointer;
+
+		&:hover{
+			color:$mainOrange;
+		}
+	}
+}

@@ -12,8 +12,9 @@
 	}
 
 	@mixin mobile{
-		background-color: rgba(0,0,0,0.2);
+		background-color: transparent;
 		position: fixed;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
 		transform-origin: 0% 0%;
 
 		&--dark{
@@ -22,7 +23,7 @@
 		}
 
 		&--dark ul li a {
-			font-size:0.97rem;
+			font-size:0.8rem;
 		}
 	}
 

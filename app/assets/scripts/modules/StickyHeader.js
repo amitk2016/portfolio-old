@@ -15,8 +15,8 @@ class StickyHeader{
  	}
 
  	addSmoothScrolling(){
- 		// this.headerLinks.smoothScroll({speed:1100});
- 		// this.logoLink.smoothScroll({speed:1100});
+ 		this.headerLinks.smoothScroll({speed:1200});
+ 		this.logoLink.smoothScroll({speed:1200});
  	}
 
  	createHeaderWaypoint(){

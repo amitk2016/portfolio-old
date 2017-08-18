@@ -39,4 +39,8 @@
 		padding-left:0px;
 		padding-right:0px;
 	}
+
+	&__height{
+		height: 90vh !important;
+	}
 }

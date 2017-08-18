@@ -49,7 +49,7 @@
 					<div class="wrapper">
 						<h1 class="large-hero__title">Amit Kumar</h1>
 						<p class="large-hero__subtitle">Full Stack Developer</p>
-						<p><a href="tel:+64221773828" class="button button__large"><i class="fa fa-phone fa-1x large-hero__mailIcon"></i>Get in Touch</a></p>
+						<p><a href="tel:+64221773828" class="button button__large"><!-- <i class="fa fa-phone fa-1x large-hero__mailIcon"> --></i>Get in Touch</a></p>
 					</div>	
 				</div>		
 		</div>
@@ -57,7 +57,7 @@
 		
 	
 
-	<section class="about page-section page-scroll" data-matching-link="#about-link" id="about">
+	<section class="about page-section page-scroll page-section__about" data-matching-link="#about-link" id="about">
 		<div class="wrapper wrapper__medium">
 			<h2 class="headline headline__centered headline--no_Tmargin">About</h2>
 			<div class="wrapper wrapper__centered">
@@ -149,55 +149,71 @@
 		<div class="row no-gutters">	
 			<h1 class="skills__heading headline headline__centered ">Projects</h1>
 			
-			<div class="row__medium-4 work__each_work item-1">
+			<div class="row__medium-4 work__each_work work__1">
 				<img src="assets/images/sparrow.png" class="work_image" />
-				<div class="item-1__hoverbox">
-					<div class="item-1__hoverContent">
-						<p class="item-1__hovertext">Alexander Sparrow</p>
-						<button class="button">click here</button>
+				<div class="work__1-hoverbox">
+					<div class="work__1-hoverContent">
+						<p class="work__1-hovertext">Alexander Sparrow</p>
+						<a href="#" class="button open-modal">Visit the Website</a>
 					</div>
 				</div>
 			</div>
 		
 			
 
-			<div class="row__medium-4 work__each_work item-2">
+			<div class="row__medium-4 work__each_work work__2">
 				<img src="assets/images/fttl.jpg" class="work_image" />
-				<div class="item-2__hoverContent">
-					<p class="item-2__hovertext">Fly to the Limit</p>
-					<button class="button">click here</button>
+				<div class="work__2-hoverbox">
+					<div class="work__2-hoverContent">
+						<p class="work__2-hovertext">Fly to the Limit</p>
+						<a href="#" class="button open-modal">Visit the Website</a>
+					</div>
 				</div>
 			</div>
-			<div class="row__medium-4 work__each_work item-3">
+
+
+			<div class="row__medium-4 work__each_work work__3">
 				<img src="assets/images/mobile-zone.png" class="work_image" />
-				<div class="item-3__hoverContent">
-					<p class="item-3__hovertext">MobileZone</p>
-					<button class="button">click here</button>
+				<div class="work__3-hoverbox">
+					<div class="work__3-hoverContent">
+						<p class="work__3-hovertext">MobileZone</p>
+						<a href="#" class="button open-modal">Visit the Website</a>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="row no-gutters">	
-			<div class="row__medium-4 work__each_work item-4">
+			<div class="row__medium-4 work__each_work work__4">
 				<img src="assets/images/president.jpg" class="work_image" />
-				<div class="item-4__hoverContent">
-					<p class="item-4__hovertext">President</p>
-					<button class="button">click here</button>
+				<div class="work__4-hoverbox">
+					<div class="work__4-hoverContent">
+						<p class="work__4-hovertext">President</p>
+						<a href="#" class="button open-modal">Visit the Website</a>
+					</div>
 				</div>
 			</div>
-			<div class="row__medium-4 work__each_work item-5">
+
+			<div class="row__medium-4 work__each_work work__5">
 				<img src="assets/images/krish-dance.png" class="work_image" />
-				<div class="item-5__hoverContent">
-					<p class="item-5__hovertext">Krish Dance</p>
-					<button class="button">click here</button>
+				<div class="work__5-hoverbox">
+					<div class="work__5-hoverContent">
+						<p class="work__5-hovertext">KrishDance</p>
+						<a href="#" class="button open-modal">Visit the Website</a>
+					</div>
 				</div>
 			</div>
-			<div class="row__medium-4 work__each_work item-6">
+
+			<div class="row__medium-4 work__each_work work__6">
 				<img src="assets/images/bm-motors.jpg" class="work_image" />
-				<div class="item-6__hoverContent">
-					<p class="item-6__hovertext">Bm-Motors</p>
-					<button class="button">click here</button>
+				<div class="work__6-hoverbox">
+					<div class="work__6-hoverContent">
+						<p class="work__6-hovertext">BM Motors</p>
+						<a href="#" class="button open-modal">Visit the Website</a>
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 	
@@ -286,24 +302,47 @@
 	</section>
 
 
-	
-
-
-
-
-
-
-
-
-
-
-
 	<footer class="site-footer">
 		<div class="wrapper">
 			<p class="site-footer__text">&copy; 2017 Amit Kumar </p>
 			<a href="#" class="back-to-top site-footer__backToTop"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 		</div>
 	</footer>
+
+	
+	<div class="modal">
+		<div class="modal__contentBox">
+			<h2 class="headline headline__centered headline__white">Alexander Sparrow</h2>
+			<div class="row row__gutters">
+				<div class="row__medium-6">
+					<img src="assets/images/sparrow-wide.png" class="modal_image" />
+				</div>
+				<div class="row__medium-6">
+					<div >
+						<p class="modal__text">
+							This website, I created as a part of my final project for Yoobee. It is a website for alexander sparrow who is an award-winning comedian and director from New Zealand, and Australasia’s number 1 Donald Trump impersonator
+
+							In this website, I created a WordPress theme from scratch and learned about WordPress tools.This website is going to be live soon.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="modal__contentBox--narrow">
+					<div class="row__6">
+						<a href="#" class="modal__buttons">Visit the Website</a>
+					</div>
+					<div class="row__6">
+						<a href="#" class="modal__buttons modal__cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__close">x</div>
+	</div>
+
+
+
 <script src="/temp/scripts/App.js"></script>
 <!-- <script type="text/javascript" src="js/functions.js"></script> -->
 </body>

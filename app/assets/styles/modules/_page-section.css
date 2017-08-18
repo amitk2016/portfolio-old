@@ -13,6 +13,10 @@
 		}*/
 	}
 
+	&__about{
+		background-color: #FFFCF5;
+	}
+
 	&__contact{
 		height:450px;
 		background: url('/assets/images/contact.jpg') center center no-repeat;
