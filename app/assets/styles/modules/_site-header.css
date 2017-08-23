@@ -14,6 +14,7 @@
 	@mixin mobile{
 		background-color: transparent;
 		position: fixed;
+		z-index:3;
 		border-bottom: 1px solid rgba(255,255,255,0.3);
 		transform-origin: 0% 0%;
 

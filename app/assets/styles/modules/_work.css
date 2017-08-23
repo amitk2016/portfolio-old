@@ -19,12 +19,14 @@
 		z-index:2;
 		background-color:rgba($mainColor,0.94);
 		opacity: 0;
-		transition:all 0.5s ease-out;
+		transform: translateX(-100px);
+		transition:all 0.4s ease-out;
 		text-align: center;
 		}
 
 		&:hover &-hoverbox{
 		opacity: 1;
+		transform:translateX(0px);
 		}
 
 		&-hoverContent{
@@ -59,7 +61,7 @@
 		z-index:2;
 		background-color:rgba($mainColor,0.94);
 		opacity: 0;
-		transition:all 0.5s ease-out;
+		transition:all 0.4s ease-out;
 		text-align: center;
 		}
 
@@ -97,6 +99,7 @@
 		left:0;
 		z-index:2;
 		background-color:rgba($mainColor,0.94);
+		transform: translateX(100px);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -104,6 +107,7 @@
 
 		&:hover &-hoverbox{
 		opacity: 1;
+		transform: translateX(0px);
 		}
 
 		&-hoverContent{
@@ -136,6 +140,7 @@
 		left:0;
 		z-index:2;
 		background-color:rgba($mainColor,0.94);
+		transform: translateX(-100px);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -143,6 +148,7 @@
 
 		&:hover &-hoverbox{
 		opacity: 1;
+		transform: translateX(0px);
 		}
 
 		&-hoverContent{

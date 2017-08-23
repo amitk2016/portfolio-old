@@ -984,13 +984,17 @@ img{
 		z-index:2;
 		background-color: rgba(229,75,75,0.94);
 		opacity: 0;
-		-webkit-transition:all 0.5s ease-out;
-		transition:all 0.5s ease-out;
+		-webkit-transform: translateX(-100px);
+		        transform: translateX(-100px);
+		-webkit-transition:all 0.4s ease-out;
+		transition:all 0.4s ease-out;
 		text-align: center;
 		}
 
 .work__1:hover .work__1-hoverbox{
 		opacity: 1;
+		-webkit-transform:translateX(0px);
+		        transform:translateX(0px);
 		}
 
 .work__1-hoverContent{
@@ -1025,8 +1029,8 @@ img{
 		z-index:2;
 		background-color: rgba(229,75,75,0.94);
 		opacity: 0;
-		-webkit-transition:all 0.5s ease-out;
-		transition:all 0.5s ease-out;
+		-webkit-transition:all 0.4s ease-out;
+		transition:all 0.4s ease-out;
 		text-align: center;
 		}
 
@@ -1065,6 +1069,8 @@ img{
 		left:0;
 		z-index:2;
 		background-color: rgba(229,75,75,0.94);
+		-webkit-transform: translateX(100px);
+		        transform: translateX(100px);
 		opacity: 0;
 		-webkit-transition:all 0.5s ease-out;
 		transition:all 0.5s ease-out;
@@ -1073,6 +1079,8 @@ img{
 
 .work__3:hover .work__3-hoverbox{
 		opacity: 1;
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
 		}
 
 .work__3-hoverContent{
@@ -1106,6 +1114,8 @@ img{
 		left:0;
 		z-index:2;
 		background-color: rgba(229,75,75,0.94);
+		-webkit-transform: translateX(-100px);
+		        transform: translateX(-100px);
 		opacity: 0;
 		-webkit-transition:all 0.5s ease-out;
 		transition:all 0.5s ease-out;
@@ -1114,6 +1124,8 @@ img{
 
 .work__4:hover .work__4-hoverbox{
 		opacity: 1;
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
 		}
 
 .work__4-hoverContent{
@@ -1438,6 +1450,7 @@ img{
 .site-header{
 		background-color: transparent;
 		position: fixed;
+		z-index:3;
 		border-bottom: 1px solid rgba(255,255,255,0.3);
 		-webkit-transform-origin: 0% 0%;
 		        transform-origin: 0% 0%
@@ -1819,9 +1832,16 @@ img{
 	 }
 
 .skills__unoderedList{
-	 	padding:2rem 0;
-	 	max-width:280px;
+	 	padding-top:0;
 	 }
+
+@media (min-width:550px){
+
+.skills__unoderedList{
+			padding:2rem 0;
+	 		max-width:280px
+	 }
+	}
 
 .skills__lists{
 	 	list-style: none;
@@ -1847,6 +1867,14 @@ img{
 			padding-bottom: 0;
 		 }
 
+@media (min-width:550px){
+
+.skills h2{
+				margin-bottom: 0;
+				padding-bottom: 0
+		 }
+	}
+
 .skills__button-clicked{
 			background-color:#3d3d3d;
 			color:white;
@@ -1855,3 +1883,7 @@ img{
 .skills__buttonsDiv{
 			margin-bottom: 1.2rem;
 		}
+
+.skills__buttonsDiv:last-child{
+				margin-bottom:0;
+			}
