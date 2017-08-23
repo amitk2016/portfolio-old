@@ -1,7 +1,9 @@
 .work{
 
 	&__image{
-		display: inline-block;
+		display:block;
+		width:100%;
+		
 	}
 
 	&__1{

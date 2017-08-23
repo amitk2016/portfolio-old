@@ -1,41 +1,38 @@
 import $ from 'jquery';
 
-class Modal{
-	constructor(){
-		this.openModalButton = $('.open-modal');
-		this.modal = $('.modal');
-		this.closeModalButton = $('.modal__close');
-		this.cancelModalButton = $('.modal__cancel');
-		this.events();
-	}
+class Modal {
+  constructor() {
+    this.openModalButton = $(".open-modal-1");
+    this.modal = $(".modal__1");
+    this.closeModalButton = $(".modal__1__close");
+    this.events();
+  }
 
-	events(){
-		// clicking the open modal 
-		this.openModalButton.click(this.openModal.bind(this));
-		//click the x modal button 
-		this.closeModalButton.click(this.closeModal.bind(this));
-		this.cancelModalButton.click(this.closeModal.bind(this));
-		//pushes the escape key 
-		$(document).keyup(this.keyPressHandler.bind(this));
-	}
+  events() {
+    // clicking the open modal button
+    this.openModalButton.click(this.openModal.bind(this));
 
-	keyPressHandler(e){
-		if(e.keyCode == 27 ){
-			this.closeModal();
-		}
-	}
+    // clicking the x close modal button
+    this.closeModalButton.click(this.closeModal.bind(this));
 
-	openModal(){
-		this.modal.addClass('modal--is-visible');
-		return false;
-	}
+    // pushes any key
+    $(document).keyup(this.keyPressHandler.bind(this));
+  }
 
-	closeModal(){
-		this.modal.removeClass('modal--is-visible');
-		return false;
-	}
+  keyPressHandler(e) {
+    if (e.keyCode == 27) {
+      this.closeModal();
+    }
+  }
 
+  openModal() {
+    this.modal.addClass("modal--is-visible");
+    return false;
+  }
 
+  closeModal() {
+    this.modal.removeClass("modal--is-visible");
+  }
 }
 
 export default Modal;

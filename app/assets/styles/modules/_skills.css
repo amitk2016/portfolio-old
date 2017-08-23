@@ -1,0 +1,55 @@
+.skills{
+	padding-bottom:3rem;
+	background-color:#f4f4f4;
+
+	 &__eachBox{
+		
+	 }
+
+	 &__unoderedList{
+	 	padding:2rem 0;
+	 	max-width:280px;
+	 }
+
+	 &__lists{
+	 	list-style: none;
+	 	display: inline-block;
+	 	background-color: $mainColor;
+	 	padding:4px 10px;
+	 	margin-right:10px;
+	 	margin-bottom: 10px;
+	 	font-size:0.8rem;
+	 	color:white;
+
+	 	&-no-bg-color{
+	 		background-color: transparent;
+	 	}
+
+	 	img{
+	 		width:45px;
+	 	}
+	 }
+	  h2{
+			margin-bottom: 0;
+			padding-bottom: 0;
+		 }
+
+		&__button-clicked{
+			background-color:#3d3d3d;
+			color:white;
+		}
+
+		&__buttonsDiv{
+			margin-bottom: 1.2rem;
+		}
+
+
+}
+
+
+
+
+
+
+
+

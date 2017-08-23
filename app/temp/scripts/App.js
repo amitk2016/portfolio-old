@@ -11113,6 +11113,10 @@ var _Modal = __webpack_require__(7);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
+var _Accordian = __webpack_require__(8);
+
+var _Accordian2 = _interopRequireDefault(_Accordian);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -11120,7 +11124,10 @@ var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)('.work_image'), "65%", "reveal-item");
 new _RevealOnScroll2.default((0, _jquery2.default)('.testimonial'), "75%", "reveal-item-2");
 var stickyHeader = new _StickyHeader2.default();
+
 var modal = new _Modal2.default();
+
+var accordian = new _Accordian2.default();
 
 /***/ }),
 /* 3 */
@@ -11724,7 +11731,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -11738,52 +11745,149 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Modal = function () {
-	function Modal() {
-		_classCallCheck(this, Modal);
+  function Modal() {
+    _classCallCheck(this, Modal);
 
-		this.openModalButton = (0, _jquery2.default)('.open-modal');
-		this.modal = (0, _jquery2.default)('.modal');
-		this.closeModalButton = (0, _jquery2.default)('.modal__close');
-		this.cancelModalButton = (0, _jquery2.default)('.modal__cancel');
-		this.events();
-	}
+    this.openModalButton = (0, _jquery2.default)(".open-modal-1");
+    this.modal = (0, _jquery2.default)(".modal__1");
+    this.closeModalButton = (0, _jquery2.default)(".modal__1__close");
+    this.events();
+  }
 
-	_createClass(Modal, [{
-		key: 'events',
-		value: function events() {
-			// clicking the open modal 
-			this.openModalButton.click(this.openModal.bind(this));
-			//click the x modal button 
-			this.closeModalButton.click(this.closeModal.bind(this));
-			this.cancelModalButton.click(this.closeModal.bind(this));
-			//pushes the escape key 
-			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
-		}
-	}, {
-		key: 'keyPressHandler',
-		value: function keyPressHandler(e) {
-			if (e.keyCode == 27) {
-				this.closeModal();
-			}
-		}
-	}, {
-		key: 'openModal',
-		value: function openModal() {
-			this.modal.addClass('modal--is-visible');
-			return false;
-		}
-	}, {
-		key: 'closeModal',
-		value: function closeModal() {
-			this.modal.removeClass('modal--is-visible');
-			return false;
-		}
-	}]);
+  _createClass(Modal, [{
+    key: "events",
+    value: function events() {
+      // clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
 
-	return Modal;
+      // clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      // pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: "keyPressHandler",
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: "openModal",
+    value: function openModal() {
+      this.modal.addClass("modal--is-visible");
+      return false;
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.modal.removeClass("modal--is-visible");
+    }
+  }]);
+
+  return Modal;
 }();
 
 exports.default = Modal;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Accordian = function () {
+  function Accordian() {
+    _classCallCheck(this, Accordian);
+
+    this.designButton = (0, _jquery2.default)(".designButton");
+    this.developmentButton = (0, _jquery2.default)('.developmentButton');
+    this.userButton = (0, _jquery2.default)('.UxButton');
+    this.designTab = (0, _jquery2.default)('#design-tab');
+    this.developmentTab = (0, _jquery2.default)('#development-tab');
+    this.userTab = (0, _jquery2.default)('#user-tab');
+    // this.skillsTab = $('.skills__eachBox');
+    this.designEvents();
+    this.developmentEvents();
+    this.UxEvents();
+  }
+
+  _createClass(Accordian, [{
+    key: 'designEvents',
+    value: function designEvents() {
+
+      this.designButton.addClass('skills__button-clicked');
+      this.developmentTab.hide();
+      this.userTab.hide();
+      this.designButton.click(this.fadein.bind(this));
+    }
+  }, {
+    key: 'fadein',
+    value: function fadein() {
+      this.developmentButton.removeClass('skills__button-clicked');
+      this.userButton.removeClass('skills__button-clicked');
+      this.designButton.addClass('skills__button-clicked');
+      this.designTab.fadeIn('slow');
+      this.developmentTab.fadeOut('fast');
+      this.userTab.fadeOut('fast');
+      return false;
+    }
+  }, {
+    key: 'developmentEvents',
+    value: function developmentEvents() {
+
+      this.developmentButton.click(this.devfadein.bind(this));
+    }
+  }, {
+    key: 'devfadein',
+    value: function devfadein() {
+      this.designButton.removeClass('skills__button-clicked');
+      this.userButton.removeClass('skills__button-clicked');
+      this.developmentButton.addClass('skills__button-clicked');
+      this.developmentTab.fadeIn('slow');
+      this.designTab.fadeOut('fast');
+      this.userTab.fadeOut('fast');
+      return false;
+    }
+  }, {
+    key: 'UxEvents',
+    value: function UxEvents() {
+      this.userButton.click(this.userfadein.bind(this));
+    }
+  }, {
+    key: 'userfadein',
+    value: function userfadein() {
+      this.developmentButton.removeClass('skills__button-clicked');
+      this.designButton.removeClass('skills__button-clicked');
+      this.userButton.addClass('skills__button-clicked');
+      this.userTab.fadeIn('slow');
+      this.developmentTab.fadeOut('fast');
+      this.designTab.fadeOut('fast');
+
+      return false;
+    }
+  }]);
+
+  return Accordian;
+}();
+
+exports.default = Accordian;
 
 /***/ })
 /******/ ]);

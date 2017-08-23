@@ -7,14 +7,11 @@ class RevealOnScroll{
 			this.offsetPercentage = offset;
 			this.className = className;
 			this.hideIntially();
-			this.createWaypoints();
-			
+			this.createWaypoints();		
 		}
-
 		hideIntially(){
 
-			this.itemToReveal.addClass(this.className);
-			
+			this.itemToReveal.addClass(this.className);	
 		}
 
 		 createWaypoints() {
@@ -31,8 +28,7 @@ class RevealOnScroll{
 				}); 	
 		    });
 		  }
-
-
+		  
 }
 
 
