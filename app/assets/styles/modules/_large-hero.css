@@ -1,9 +1,9 @@
 .large-hero{
 	position: relative;
-	height:100vh;
-	background:url('../../assets/images/header-1290w.jpg') center center no-repeat;
+	height:90vh;
+	background:url('../../assets/images/header-1290w.jpg') center center no-repeat fixed;
 	@mixin tablet{
-		background:url('../../assets/images/header-1920w.jpg') center center no-repeat;
+		background:url('../../assets/images/header-1920w.jpg') center center no-repeat fixed;
 	}
 
 	
@@ -70,6 +70,9 @@
 
 }
 
+.typed-cursor{
+	font-size: 1.3rem;
+}
 
 
 

@@ -16,14 +16,23 @@
     	margin-top: 0;
   	}
 
+  	&__skills{
+  		background-color: #f4f4f4;
+  		margin:0;
+  		padding-bottom: 1.8rem;
+  	}
+
   	&__white{
-		font-size: 1.8rem;
+		
 		color:white;
   		@mixin mobile{
   		 color:white;
   		}
   		
   	}
+    &__bottomMargin{
+      margin-bottom:5rem;
+    }
 
   	
 }

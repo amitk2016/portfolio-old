@@ -3,4 +3,9 @@
 	&__circle{
 		border-radius:50%;
 	}
+
+	&__boxShadow{
+		border: 3px solid #eee;
+  		box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+	}
 }

@@ -40,6 +40,10 @@
 			text-decoration: none;
 		}
 	}
+
+	&__hero{
+		margin-top: 4.8rem;
+	}
 }
 
 

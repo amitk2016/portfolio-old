@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="temp/styles/styles.css">
 	</head>
 	<body id="home">
+	<div class="se-pre-con"></div>
 
 	<header class="site-header">
 		<div class="">
@@ -48,8 +49,14 @@
 				<div class="large-hero__textContent">
 					<div class="wrapper">
 						<h1 class="large-hero__title">Amit Kumar</h1>
-						<p class="large-hero__subtitle">Full Stack Developer</p>
-						<p><a href="tel:+64221773828" class="button button__large"><!-- <i class="fa fa-phone fa-1x large-hero__mailIcon"> --></i>Get in Touch</a></p>
+						<!-- <p class="large-hero__subtitle">Full Stack Developer</p> -->
+						<span id="typed" class="large-hero__subtitle"></span>
+						<div id="typed-strings" >
+						    <p>Front End Developer</p>
+						    <p>Back End Developer</p>
+						</div>
+						<p><a href="mailto:amit.k03377@gmail.com" class="button button__large button__hero">Get in Touch</a></p>
+						
 					</div>	
 				</div>		
 		</div>
@@ -61,144 +68,72 @@
 		<div class="wrapper wrapper__medium">
 			<h2 class="headline headline__centered headline--no_Tmargin">About</h2>
 			<div class="wrapper wrapper__centered">
-				<img src="assets/images/profile.jpg" alt="profile-pic of amit kumar" class="image image__circle" width="100">
+				<img src="assets/images/profile.jpg" alt="profile-pic of amit kumar" class="image image__circle image__boxShadow profile-pic" width="100">
 			</div>
-			<div class="generic-content-container wrapper">
-				<p>Hi, I’m Amit, a Full Stack developer living in Wellington. I spend my days with my hands in many different areas of web development from back-end programming (PHP) to front end engineering (HTML, CSS, and jQuery/Javascript) and user experience.I’m extremely passionate about web development and design in all it’s forms and helping my clients build and improve their online presence.Aside from web development, I enjoy spending my time with my family, traveling and playing & watching sports.
+			<div class="generic-content-container wrapper about-text">
+				<p>Hi, I’m Amit, a Full Stack developer living in Wellington. I spend my days with my hands in many different areas of web development from back-end programming (PHP) to front end engineering (HTML, CSS, and jQuery/Javascript) and user experience.I’m extremely passionate about web development and design in all it’s forms and helping my clients build and improve their online presence.Aside from web development, I enjoy spending my time with my family, traveling and cricket.
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="skills page-scroll" data-matching-link="#skills-link" id="skills">
-		<div >
-			<h1 class="headline headline__centered">Skills</h1>
-			  <div class="wrapper wrapper__medium wrapper__centered">
-				    <div class="skills__accordian row row__gutters_small" id="accordian">
-						    	
-				    	<div class="skills__buttonsDiv row__medium-4">
-				    		<a href="#design-tab" class="button button__coloured designButton">Design</a>
-				    	</div>
 
-				    	<div class="skills__buttonsDiv row__medium-4">
-				    		<a href="#development-tab" class="button button__coloured developmentButton">Development</a>	
-				    	</div>
+	<div class="skills page-scroll" data-matching-link="#skills-link" id="skills"></div>
+	<h1 class="headline headline__centered headline__skills">Skills</h1>
+	<div class="skills__underline"></div>
+	<section id="wrapper" class="skewed">
+		<div class="layer top">
+			<div class="content-wrap">
+				<div class="content-body generic-content-container">
+					<h1 class="headline__centered">Design</h1>
+					<p>I work with graphics tablets, the Adobe Creative Suite, and open-source software like InkScape and Krita.</p>
+					<ul class="skills__unoderedList">
+		  				<li class="skills__lists">Wireframes</li>
+		  				<li class="skills__lists">Mockups</li>
+		  				<li class="skills__lists">Interface Design(UI)</li>
+		  				<li class="skills__lists">Photo manipulation</li>   
+		  				<li class="skills__lists">Typography</li>
+		  				<li class="skills__lists">Illustration</li> 
+		  			</ul>
+				</div>
+				<img src="assets/images/design-portfolio.png" alt="design mock up in a imac">
+			</div>
+		</div>
 
-				    	<div class="skills__buttonsDiv row__medium-4">
-					    	<a href="#user-tab" class="button button__coloured UxButton">User-focused Strategy</a>
-				    	</div>
-						    	
-					</div>
+		<div class="layer bottom">
+			<div class="content-wrap">
+				<div class="content-body ">
+					<h1 class="headline__centered">Development</h1>
+					<p>I can code in HTML / Bootstrap, CSS / SASS and JavaScript / jQuery also
+					I’m comfortable with PHP, MySql and Wordpress.</p>
+					<ul class="skills__unoderedList">
+		  				<li class="skills__lists">Responsive design</li>
+		  				<li class="skills__lists">Browser testing</li>
+		  				<li class="skills__lists">Validation</li>
+		  				<li class="skills__lists">Front-end frameworks</li>   
+		  				<li class="skills__lists">Wordpress theme development</li> 	
+		  				<li class="skills__lists">Back-end frameworks</li> 
+		  			</ul>
 				</div>
 
-
-					  
-			  	<div class="wrapper wrapper__medium">
-			  		<div class="skills__tab row row__gutters" id="design-tab">
-			  			<div class="skills__eachBox">
-				  			<div class="row__medium-6 row__firstDiv" style="padding-top:4rem;">
-				  				<ul class="skills__unoderedList">
-					  				<li class="skills__lists">Wireframes</li>
-					  				<li class="skills__lists">Mockups</li>
-					  				<li class="skills__lists">Illustration</li>
-					  				<li class="skills__lists"> Interface design (UI)</li>   
-					  				<li class="skills__lists">Photos manipulation</li> 	
-					  			</ul>
-					  			<h2>Tools I use </h2>
-					  			<ul class="skills__unoderedList">
-					  				<li class="skills__lists skills__lists-no-bg-color">
-										<img src="assets/images/photoshop.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/illustrator.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/indesign.png" alt="">
-					  				</li>
-					  			</ul>
-				  			</div>
-					  		<div class="row__medium-6 row__secondDiv">
-					  			<img src="assets/images/phone-mock.png" class="image"/>
-					  		</div>
-				  		</div>
-			  		</div>
-
-				  	<div class="row row__gutters" id="development-tab" style="padding-top:4rem;">
-				  		<div class="skills__eachBox">
-				  			<div class="row__medium-6">
-				  				<ul class="skills__unoderedList">
-					  				<li class="skills__lists">Responsive design</li>
-					  				<li class="skills__lists">Browser testing</li>
-					  				<li class="skills__lists">Validation</li>
-					  				<li class="skills__lists">Front-end frameworks</li>   
-					  				<li class="skills__lists">Template creation</li> 	
-					  			</ul>
-					  			<h2>Front End Languages </h2>
-					  			<ul class="skills__unoderedList">
-					  				<li class="skills__lists skills__lists-no-bg-color">
-										<img src="assets/images/html.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/css.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/javascript.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/jquery.png" alt="">
-					  				</li>
-					  			</ul>
-					  		</div>
-					  		<div class="row__medium-6">
-					  			<img src="assets/images/skills-development.png" class="img-responsive" />
-					  		</div>
-				  		</div>
-				  	</div>
-				
-				  	<div class="row row__gutters" id="user-tab" style="padding-top:4rem;">
-				  		<div class="skills__eachBox">
-				  			<div class="row__medium-6">
-				  				<ul class="skills__unoderedList">
-					  				<li class="skills__lists">User experience design(UX)</li>
-					  				<li class="skills__lists">Accessibility design</li>
-					  				<li class="skills__lists">Search engine optimisation</li>
-					  				<li class="skills__lists">Data analysis</li>   
-					  				<li class="skills__lists">Information architecture</li> 	
-					  			</ul>
-					  			<h2>Tools I use </h2>
-					  			<ul class="skills__unoderedList">
-					  				<li class="skills__lists skills__lists-no-bg-color">
-										<img src="assets/images/photoshop.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/illustrator.png" alt="">
-					  				</li>
-					  				<li class="skills__lists skills__lists-no-bg-color">
-					  					<img src="assets/images/indesign.png" alt="">
-					  				</li>
-					  			</ul>
-					  		</div>
-					  		<div class="row__medium-6">
-					  			<img src="assets/images/skills-user-low.png" class="img-responsive" />
-					  		</div>
-					  	</div>
-				  	</div>
-				 </div>
-
+				<img src="assets/images/development-portfolio.png" alt="coding image mockup in a imac">
+			</div>
 		</div>
-		
-	</section>
+		<div class="handle"></div>
+
+	</section> 
+
 
 	<section class="work container-fluid page-scroll" data-matching-link="#work-link" id="work">
 		<div class="row no-gutters">	
-			<h1 class="skills__heading headline headline__centered ">Projects</h1>
+			<h1 class="skills__heading headline headline__centered">Projects</h1>
 			
 			<div class="row__medium-4 work__each_work work__1">
-				<img src="assets/images/sparrow.png" class="work_image" style="display: block;"/>
+				<img src="assets/images/fttl-work.png" class="work_image" alt="mockup of fly to the limit website" style="display:block;"/>
 				<div class="work__1-hoverbox">
 					<div class="work__1-hoverContent">
-						<p class="work__1-hovertext">Alexander Sparrow</p>
-						<a href="#" class="button open-modal-1">Open Website</a>
+						<p class="work__1-hovertext">Fly to the Limit</p>
+						<a href="https://amitk2016.github.io/flytothelimit/" class="button" target="_blank">Visit the Website</a>
 					</div>
 				</div>
 			</div>
@@ -206,22 +141,22 @@
 			
 
 			<div class="row__medium-4 work__each_work work__2">
-				<img src="assets/images/tournville.png" class="work_image" style="display: block;"/>
+				<img src="assets/images/tournville-work.png" class="work_image" alt="mockup of tournville website" style="display: block;"/>
 				<div class="work__2-hoverbox">
 					<div class="work__2-hoverContent">
 						<p class="work__2-hovertext">Tournville</p>
-						<a href="#" class="button open-modal">Visit the Website</a>
+						<a href="http://www.tournville.com/" class="button" target="_blank">Visit the Website</a>
 					</div>
 				</div>
 			</div>
 
 
 			<div class="row__medium-4 work__each_work work__3">
-				<img src="assets/images/mobile-zone.png" class="work_image" style="display: block;"/>
+				<img src="assets/images/mobile-zone.png" class="work_image" alt="mockup of mobilezone website" style="display: block;"/>
 				<div class="work__3-hoverbox">
 					<div class="work__3-hoverContent">
 						<p class="work__3-hovertext">MobileZone</p>
-						<a href="#" class="button open-modal">Visit the Website</a>
+						<a href="http://mobilezone.rf.gd/mobilezone/" class="button" target="_blank">Visit the Website</a>
 					</div>
 				</div>
 			</div>
@@ -229,31 +164,31 @@
 
 		<div class="row no-gutters">	
 			<div class="row__medium-4 work__each_work work__4">
-				<img src="assets/images/kdesigns.png" class="work_image" style="display:block;"/>
+				<img src="assets/images/kdesigns.png" class="work_image" alt="mockup of k-designs website" style="display:block;"/>
 				<div class="work__4-hoverbox">
 					<div class="work__4-hoverContent">
 						<p class="work__4-hovertext">K-designs</p>
-						<a href="#" class="button open-modal">Visit the Website</a>
+						<a href="https://akdesigns.000webhostapp.com/" class="button" target="_blank">Visit the Website</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="row__medium-4 work__each_work work__5">
-				<img src="assets/images/cleanplates.png" class="work_image" style="display:block;"/>
+				<img src="assets/images/cleanplates.png" class="work_image" alt="mockup of kids[late website" style="display:block;"/>
 				<div class="work__5-hoverbox">
 					<div class="work__5-hoverContent">
-						<p class="work__5-hovertext">CleanPlate</p>
-						<a href="#" class="button open-modal">Visit the Website</a>
+						<p class="work__5-hovertext">KidsPlate</p>
+						<a href="https://amitk2016.github.io/kidsplate/" class="button" target="_blank">Visit the Website</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="row__medium-4 work__each_work work__6">
-				<img src="assets/images/resumePlus.png" class="work_image" style="display:block;"/>
+				<img src="assets/images/resumePlus.png" class="work_image" alt="mockup of resumeplus website" style="display:block;"/>
 				<div class="work__6-hoverbox">
 					<div class="work__6-hoverContent">
 						<p class="work__6-hovertext">ResumePlus</p>
-						<a href="#" class="button open-modal">Visit the Website</a>
+						<a href="http://resumeplus123-com.stackstaging.com/" class="button" target="_blank">Visit the Website</a>
 					</div>
 				</div>
 			</div>
@@ -273,7 +208,7 @@
 			<div class="row__medium-4">
 				<div class="testimonial">
 					<div class="testimonial__photo">
-						<img src="http://lorempixel.com/100/100" alt="">
+						<img src="assets/images/yoobee.jpg" alt="yoobee school of design icon">
 					</div>
 					<h2 class="testimonial__title">Ben Abbott</h2>
 					<h3 class="testimonial__subtitle">Yoobee School</h3>
@@ -284,22 +219,22 @@
 			<div class="row__medium-4">
 				<div class="testimonial">
 					<div class="testimonial__photo">
-						<img src="http://lorempixel.com/100/100" alt="">
+						<img src="assets/images/tel-logo.png"  alt="Tournville icon">
 					</div>
-					<h2 class="testimonial__title">Andrew Sparrow</h2>
+					<h2 class="testimonial__title">Andrew Wood</h2>
 					<h3 class="testimonial__subtitle">Tournville</h3>
-					<p class="testimonial__text">Amit is truly a professional web designer who designs sites from scratch, giving each and every design a unique touch. The reason we picked him as our web designer is because he is capable of bringing in fresh and unique ideas in presenting website contents, layout and the flow of information.</p>
+					<p class="testimonial__text">Amit is truly a professional web developer who designs sites from scratch, giving each and every design a unique touch. The reason I picked him as our web developer is because he is capable of bringing in fresh and unique ideas in presenting website contents, layout and the flow of information.</p>
 				</div>
 				
 			</div>
 			<div class="row__medium-4">
 				<div class="testimonial testimonial__last">
 					<div class="testimonial__photo">
-						<img src="http://lorempixel.com/100/100" alt="">
+						<img src="assets/images/resumeplus-logo.png" alt="resumeplus icon">
 					</div>
-					<h2 class="testimonial__title">Mike Hanagen</h2>
+					<h2 class="testimonial__title">Mike Baker</h2>
 					<h3 class="testimonial__subtitle">ResumePlus</h3>
-					<p class="testimonial__text">Amit has worked for me on two websites, On both projects, I found Amit to be a fast and efficient programmer, with a good eye for design. The first website had a user-friendly interface and simple shopping elements. The second was equally well laid out, and his suggestions for streamlining the information contained made for a beautiful and easily navigated website.I would highly recommend Amit as a web-designer and look forward to working with him again.</p>
+					<p class="testimonial__text">Amit has worked for me on my website,I found Amit to be a fast and efficient programmer, with a good eye for design.He listened carefully to my needs and recommended changes that proved beneficial.He was patient with my questions and answered them in end-user terminology.I would highly recommend Amit as a Web-Developer and look forward to working with him again.</p>
 				</div>
 			</div>
 		</div>
@@ -308,7 +243,7 @@
 
 	<section class="contact page-section page-section__contact page-scroll" data-matching-link="#contact-link" id="contact">
 		<div class="page-section__contactOverlay">
-			<h2 class="headline headline__centered headline__white">Contact</h2>
+			<h2 class="headline headline__centered headline__white headline__bottomMargin">Contact</h2>
 			<div class="wrapper wrapper__centered">
 				<div class="row row__gutters_small row__text">
 					<div class="row__medium-4">
@@ -349,76 +284,227 @@
 	<footer class="site-footer">
 		<div class="wrapper">
 			<p class="site-footer__text">&copy; 2017 Amit Kumar </p>
-			<a href="#" class="back-to-top site-footer__backToTop"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			<a href="https://github.com/amitk2016" class="back-to-top site-footer__backToTop" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 		</div>
 	</footer>
 
 	
-	<div class="modal__1">
-		<div class="modal__1__contentBox">
-			<h2 class="headline headline__centered headline__white">Alexander Sparrow</h2>
-			<div class="row row__gutters">
-				<div class="row__medium-6">
-					<img src="assets/images/sparrow-wide.png" class="modal__1_image" />
-				</div>
-				<div class="row__medium-6">
-					<div >
-						<p class="modal__1__text">
-							This website, I created as a part of my final project for Yoobee. It is a website for alexander sparrow who is an award-winning comedian and director from New Zealand, and Australasia’s number 1 Donald Trump impersonator
+<!-- 	<div class="modal__first">
+		<div class="modal__first-contentBox ">
+			<h2 class="modal__first-headline">Fly to the Limit</h2>
+			<div class="wrapper wrapper__medium">
+				<div class="row row__gutters ">
+					<div class="row__medium-6 modal-img">
+						<img src="assets/images/fttl-website.png" class="modal__first-image" />
+					</div>
+					<div class="row__medium-6">
+						<div >
+							<p class="modal__first-text">
+								This website, I created as a part of my final project for Yoobee. It is a website for alexander sparrow who is an award-winning comedian and director from New Zealand, and Australasia’s number 1 Donald Trump impersonator
 
-							In this website, I created a WordPress theme from scratch and learned about WordPress tools.This website is going to be live soon.
-						</p>
+								In this website, I created a WordPress theme from scratch and learned about WordPress tools.This website is going to be live soon.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="modal__first-contentBox-narrow">
+						<div class="row__medium-6">
+							<a target="_blank" href="http://amit.yoobee.net.nz/alexendersaprrow/" class="modal__first-buttons">Visit the Website</a>
+						</div>
+						<div class="row__medium-6">
+							<a href="#" class="modal__first-buttons modal__first-cancel">Cancel</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="modal__1__contentBox--narrow">
-					<div class="row__6">
-						<a href="#" class="modal__1__buttons">Visit the Website</a>
-					</div>
-					<div class="row__6">
-						<a href="#" class="modal__1__buttons modal__cancel-1">Cancel</a>
-					</div>
-				</div>
-			</div>
+			
 		</div>
-		<div class="modal__1__close">x</div>
-	</div>
+		<div class="modal__first-close">x</div>
+	</div>  
+ -->
+	<!-- First modal close here  -->
 	
-	<div class="modal">
-		<div class="modal__contentBox">
-			<h2 class="headline headline__centered headline__white">Alexander Sparrow</h2>
-			<div class="row row__gutters">
-				<div class="row__medium-6">
-					<img src="assets/images/sparrow-wide.png" class="modal_image" />
+<!-- 
+	<div class="modal__second">
+		<div class="modal__second-contentBox ">
+			<h2 class="modal__second-headline">Tounrville</h2>
+			<div class="wrapper wrapper__medium">
+				<div class="row row__gutters ">
+					<div class="row__medium-6 modal-img">
+						<img src="assets/images/tournville-wide.png" class="modal__second-image" />
+					</div>
+					<div class="row__medium-6">
+						<div >
+							<p class="modal__second-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil, omnis libero nulla architecto, perspiciatis a harum cum ex voluptates quod commodi fugiat suscipit nesciunt ad dolore doloribus debitis similique error, explicabo repellendus rerum? Officia alias quos doloremque, eos eveniet placeat iure?
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="row__medium-6">
-					<div >
-						<p class="modal__text">
-							This website, I created as a part of my final project for Yoobee. It is a website for alexander sparrow who is an award-winning comedian and director from New Zealand, and Australasia’s number 1 Donald Trump impersonator
-
-							In this website, I created a WordPress theme from scratch and learned about WordPress tools.This website is going to be live soon.
-						</p>
+				<div class="row">
+					<div class="modal__second-contentBox-narrow">
+						<div class="row__medium-6">
+							<a target="_blank" href="http://www.tournville.com/" class="modal__second-buttons">Visit the Website</a>
+						</div>
+						<div class="row__medium-6">
+							<a href="#" class="modal__second-buttons modal__second-cancel">Cancel</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="modal__contentBox--narrow">
-					<div class="row__6">
-						<a href="#" class="modal__buttons">Visit the Website</a>
-					</div>
-					<div class="row__6">
-						<a href="#" class="modal__buttons modal__cancel">Cancel</a>
-					</div>
-				</div>
-			</div>
+			
 		</div>
-		<div class="modal__close">x</div>
+		<div class="modal__second-close">x</div>
 	</div>
+	 -->
 
+	<!-- Second modal close here  -->
+<!-- 
+	<div class="modal__third">
+		<div class="modal__third-contentBox ">
+			<h2 class="modal__third-headline">MobileZone</h2>
+			<div class="wrapper wrapper__medium">
+				<div class="row row__gutters ">
+					<div class="row__medium-6 modal-img">
+						<img src="assets/images/mobilezone-wide.png" class="modal__third-image" />
+					</div>
+					<div class="row__medium-6">
+						<div >
+							<p class="modal__third-text">
+								MobileZone is a online shopping website for mobiles which  I created during my server-side project. I learned how to design and build the relational database using MYSQL and how to write the database applications using PHP5 in Object Oriented Programming(OOP) style.The database stores the information of items which can be sold, user data, which includes their own shopping cart and previous orders. Admins have the ability to add, edit and remove items from the database.Only mobile products page working and a user has to register to buy products.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="modal__third-contentBox-narrow">
+						<div class="row__medium-6">
+							<a target="_blank" href="http://mobilezone.rf.gd/mobilezone/index.php?page=home" class="modal__third-buttons">Visit the Website</a>
+						</div>
+						<div class="row__medium-6">
+							<a href="#" class="modal__third-buttons modal__third-cancel">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="modal__third-close">x</div>
+	</div> -->
+	<!-- third modal ends here  -->
 
+<!-- 	<div class="modal__fourth">
+		<div class="modal__fourth-contentBox ">
+			<h2 class="modal__fourth-headline">K-designs</h2>
+			<div class="wrapper wrapper__medium">
+				<div class="row row__gutters ">
+					<div class="row__medium-6">
+						<img src="assets/images/kdesigns-wide.png" class="modal__fourth-image" />
+					</div>
+					<div class="row__medium-6">
+						<div >
+							<p class="modal__fourth-text">
+								This website, I gained my experience with CMS and e-commerce solutions.I got familiar with some of the plugins including woo commerce and others.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="modal__fourth-contentBox-narrow">
+						<div class="row__medium-6">
+							<a target="_blank" href="https://akdesigns.000webhostapp.com/" class="modal__fourth-buttons">Visit the Website</a>
+						</div>
+						<div class="row__medium-6">
+							<a href="#" class="modal__fourth-buttons modal__fourth-cancel">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="modal__fourth-close">x</div>
+	</div> -->
+	<!-- Fourth modal ends here  -->
+	
+<!-- 	<div class="modal__fifth">
+		<div class="modal__fifth-contentBox ">
+			<h2 class="modal__fifth-headline">CleanPlate</h2>
+			<div class="wrapper wrapper__medium">
+				<div class="row row__gutters ">
+					<div class="row__medium-6">
+						<img src="assets/images/cleanplates-wide.png" class="modal__fifth-image" />
+					</div>
+					<div class="row__medium-6">
+						<div >
+							<p class="modal__fifth-text">
+								This website, I created as a part of my final project for Yoobee. It is a website for alexander sparrow who is an award-winning comedian and director from New Zealand, and Australasia’s number 1 Donald Trump impersonator
+								In this website, I created a WordPress theme from scratch and learned about WordPress tools.This website is going to be live soon.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="modal__fifth-contentBox-narrow">
+						<div class="row__medium-6">
+							<a target="_blank" href="#" class="modal__fifth-buttons">Visit the Website</a>
+						</div>
+						<div class="row__medium-6">
+							<a href="#" class="modal__fifth-buttons modal__fifth-cancel">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="modal__fifth-close">x</div>
+	</div> -->
+	<!-- Fifth modal ends here  -->
 
+<!-- 		<div class="modal__sixth">
+		<div class="modal__sixth-contentBox ">
+			<h2 class="modal__sixth-headline">ResumePlus</h2>
+			<div class="wrapper wrapper__medium">
+				<div class="row row__gutters ">
+					<div class="row__medium-6 modal-img">
+						<img src="assets/images/resumeplus-w.png" class="modal__sixth-image" />
+					</div>
+					<div class="row__medium-6">
+						<div >
+							<p class="modal__sixth-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eaque, aliquid quaerat dolorum minus repudiandae tempora commodi totam quo debitis at nemo excepturi aperiam sequi, saepe atque nesciunt? Quo magni possimus non modi rem. Facilis adipisci minima minus earum impedit.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="modal__sixth-contentBox-narrow">
+						<div class="row__medium-6">
+							<a href="#" class="modal__sixth-buttons">Visit the Website</a>
+						</div>
+						<div class="row__medium-6">
+							<a href="#" class="modal__sixth-buttons modal__sixth-cancel">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="modal__sixth-close">x</div>
+	</div> -->
+	<!-- sixth modal ends here  -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="/temp/scripts/App.js"></script>
 <!-- <script type="text/javascript" src="js/functions.js"></script> -->
+
+
+<script>
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
 </body>
 </html>

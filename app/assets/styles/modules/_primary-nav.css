@@ -1,5 +1,5 @@
 .primary-nav{
-
+	
 	&__pull_right{
 		
 
@@ -45,6 +45,7 @@
 
 			&:hover{
 				color:white;
+				text-decoration: underline;
 			}
 			
 		}

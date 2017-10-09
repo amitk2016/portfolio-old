@@ -7,6 +7,9 @@
     "lazysizes": "4.0.0-rc3",
     "normalize.css": "7.0.0",
     "picturefill": "3.0.2",
+    "scrollreveal": "^3.3.6",
+    "typed.js": "^2.0.6",
+    "typeit": "^4.4.1",
     "waypoints": "4.0.1"
   },
   "devDependencies": {
