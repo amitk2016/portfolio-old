@@ -555,7 +555,7 @@ img{
 .large-hero__textContent{
 		position: absolute;
 		color:rgba(255,255,255,.9);
-		top:50%;
+		top:46%;
 		-webkit-transform: translateY(-50%);
 		        transform: translateY(-50%);
 		left:0;
@@ -644,8 +644,6 @@ img{
 @media (min-width:550px){
 
 .button__large{
-			font-size:0.8rem;
-			font-weight:300;
 			padding:0.75rem 1.6rem ;
 			text-transform: uppercase
 	}
@@ -703,7 +701,7 @@ img{
 
 .page-section__contact{
 		height:500px;
-		background: url('/assets/images/contact.jpg') center center no-repeat;
+		background: url('../../assets/images/contact.jpg') center center no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		color: white;
@@ -1614,6 +1612,28 @@ img{
 			        transform:rotate(-45deg) translateY(1px);
 		}
 
+.primary-nav{
+
+	/*&__5th-item{
+		margin-left:55px;
+
+		@mixin mobile{
+			margin-left: 0;
+		}
+	}
+
+	&__6th-item{
+		margin-left:20px;
+
+		@mixin mobile{
+			margin-left: 0;
+		}
+		
+	}*/
+
+
+}
+
 @media (min-width:550px){
 
 .primary-nav__pull_right{
@@ -1636,6 +1656,8 @@ img{
 		list-style: none;
 		/*display: inline-block;*/
 		padding:20px 0;
+		text-align: left;
+		margin-left: 37vw;
 	}
 
 @media (min-width:550px){
@@ -1645,7 +1667,9 @@ img{
 			display: block;
 			margin-bottom:0;
 			padding:0px 22px;
-			background-color: transparent
+			background-color: transparent;
+			text-align: none;
+			margin-left: 0px
 	}
 	}
 
@@ -1677,43 +1701,21 @@ img{
 	}
 
 .primary-nav__icon{
-		display: inline-block;
-	  font-size: 1.5em;
-	  margin-right: 1.5em;
-	  margin-left: -1.5em;
-	  width: 1.1em;
-	  text-align:center;
-	  color: rgba(255,255,255,.6);
+		  display: inline-block;
+		  font-size: 1.5em;
+		  /*margin-right: 1.5em;
+		  margin-left: -1.5em;*/
+		  width: 1.1em;
+		  text-align:center;
+		  color: rgba(255,255,255,.6);
+		  position: absolute;
+		  left:24vw;
 	}
 
 @media (min-width:550px){
 
 .primary-nav__icon{
 			display:none !important
-	}
-	}
-
-.primary-nav__5th-item{
-		margin-left:55px;
-	}
-
-@media (min-width:550px){
-
-.primary-nav__5th-item{
-			margin-left: 0
-	}
-	}
-
-.primary-nav__6th-item{
-		margin-left:20px;
-		
-	}
-
-@media (min-width:550px){
-
-.primary-nav__6th-item{
-			margin-left: 0
-		
 	}
 	}
 

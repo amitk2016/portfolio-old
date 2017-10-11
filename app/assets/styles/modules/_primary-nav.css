@@ -18,13 +18,16 @@
 		list-style: none;
 		/*display: inline-block;*/
 		padding:20px 0;
-
+		text-align: left;
+		margin-left: 37vw;
 		@mixin mobile{
 			float: left;
 			display: block;
 			margin-bottom:0;
 			padding:0px 22px;
 			background-color: transparent;
+			text-align: none;
+			margin-left: 0px;
 		}
 	}
 	a{
@@ -34,6 +37,7 @@
 		font-size:1.1rem;
 		transition: all 0.3s ease-out;
 		text-transform: uppercase;
+
 
 		@mixin mobile{
 			font-size:0.8rem;
@@ -52,20 +56,21 @@
 	}
 
 	&__icon{
-		display: inline-block;
-	  font-size: 1.5em;
-	  margin-right: 1.5em;
-	  margin-left: -1.5em;
-	  width: 1.1em;
-	  text-align:center;
-	  color: rgba(255,255,255,.6);
-
+		  display: inline-block;
+		  font-size: 1.5em;
+		  /*margin-right: 1.5em;
+		  margin-left: -1.5em;*/
+		  width: 1.1em;
+		  text-align:center;
+		  color: rgba(255,255,255,.6);
+		  position: absolute;
+		  left:24vw;
 		@mixin mobile{
 			display:none !important;
 		}
 	}
 
-	&__5th-item{
+	/*&__5th-item{
 		margin-left:55px;
 
 		@mixin mobile{
@@ -80,7 +85,7 @@
 			margin-left: 0;
 		}
 		
-	}
+	}*/
 
 
 }
