@@ -9,6 +9,7 @@ class StickyHeader{
  		this.pageScroll = $('.page-scroll');
  		this.headerLinks = $('.primary-nav a');
  		this.logoLink = $('.site-header__logoLink');
+ 		this.readmoreButton = $('.button__readMore');
  		this.createHeaderWaypoint();
  		this.createPageScrollWaypoints();
  		this.addSmoothScrolling();
@@ -17,6 +18,7 @@ class StickyHeader{
  	addSmoothScrolling(){
  		this.headerLinks.smoothScroll({speed:1200});
  		this.logoLink.smoothScroll({speed:1200});
+ 		this.readmoreButton.smoothScroll({speed:1200});
  	}
 
  	createHeaderWaypoint(){

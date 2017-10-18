@@ -11317,6 +11317,7 @@ var StickyHeader = function () {
     this.pageScroll = (0, _jquery2.default)('.page-scroll');
     this.headerLinks = (0, _jquery2.default)('.primary-nav a');
     this.logoLink = (0, _jquery2.default)('.site-header__logoLink');
+    this.readmoreButton = (0, _jquery2.default)('.button__readMore');
     this.createHeaderWaypoint();
     this.createPageScrollWaypoints();
     this.addSmoothScrolling();
@@ -11327,6 +11328,7 @@ var StickyHeader = function () {
     value: function addSmoothScrolling() {
       this.headerLinks.smoothScroll({ speed: 1200 });
       this.logoLink.smoothScroll({ speed: 1200 });
+      this.readmoreButton.smoothScroll({ speed: 1200 });
     }
   }, {
     key: 'createHeaderWaypoint',

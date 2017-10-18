@@ -17,7 +17,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.7s ease-out;
 		text-align: center;
@@ -57,7 +57,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.7s ease-out;
 		text-align: center;
@@ -96,7 +96,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.7s ease-out;
 		text-align: center;
@@ -135,7 +135,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.7s ease-out;
 		text-align: center;
@@ -174,7 +174,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.7s ease-out;
 		text-align: center;
@@ -213,7 +213,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		
 		transition:all 0.7s ease-out;
@@ -259,7 +259,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.94);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -291,7 +291,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.85);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -323,7 +323,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.85);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -355,7 +355,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.85);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -387,7 +387,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.85);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
@@ -419,7 +419,7 @@
 		top:0;
 		left:0;
 		z-index:2;
-		background-color:rgba($mainColor,0.85);
+		background-color:rgba(0,0,0,0.55);
 		opacity: 0;
 		transition:all 0.5s ease-out;
 		text-align: center;
