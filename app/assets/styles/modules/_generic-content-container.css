@@ -1,6 +1,9 @@
+.about-text{
+	font-size: 1.2rem;
+}
 .generic-content-container{
 	p{
-		line-height: 1.65;
+		line-height: 1.85;
 		font-size:1rem;
 		font-weight: 300;
 		max-width:620px;
@@ -11,3 +14,4 @@
 
 	
 }
+

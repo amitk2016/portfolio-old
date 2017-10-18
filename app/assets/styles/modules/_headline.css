@@ -2,6 +2,7 @@
 	font-weight: 300;
 	font-size:2.2rem;
 	text-transform: uppercase;
+  color:$mainBlue;
 
 	@mixin mobile{
 		font-size:2.875rem;
@@ -18,7 +19,8 @@
   	&__skills{
   		background-color: #f4f4f4;
   		margin:0;
-  		padding-bottom: 1.8rem;
+      padding-top:1.8rem;
+  		padding-bottom:31px;
   	}
 
   	&__white{
@@ -30,8 +32,23 @@
   		
   	}
     &__bottomMargin{
-      margin-bottom:5rem;
+      margin-bottom:3rem;
+    }
+
+    &__topMargin{
+      margin-top:3.8rem;
     }
 
   	
 }
+
+
+
+
+
+
+
+
+
+
+

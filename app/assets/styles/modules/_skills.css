@@ -36,11 +36,11 @@
 
 	 &__lists{
 			list-style-type: none;
-			padding:6px 10px;
+			padding:6px 6px;
 			margin-bottom:10px;
-			font-size:0.8rem;
-			display: inline-block;
-			margin-right:5px;
+			font-size:0.9rem;
+			/*display: inline-block;*/
+			/*margin-right:5px;*/
 			border-radius: 30px;
 	 	@mixin desktop{
 		 	margin-right:8px;
@@ -114,6 +114,7 @@
 
 .layer .content-body{
 	padding:2rem;
+	text-align: center;
 	@mixin desktop{
 	  width:25%;
 	  position:absolute;

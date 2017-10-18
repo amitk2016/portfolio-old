@@ -6,7 +6,7 @@
 	transition: all 0.3s ease-out;
 
 	&--is-expanded{
-		background-color:#E54B4B;
+		background-color:$mainBlue;
 		
 
 	}
@@ -19,7 +19,7 @@
 		transform-origin: 0% 0%;
 
 		&--dark{
-			background-color: rgba(0,0,0,0.9);
+			background-color: rgba($mainBlue,0.95);
 			transform:scaleY(0.97);
 		}
 
