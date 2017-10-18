@@ -452,6 +452,11 @@ template {
 
 /*$mainBlue: #2f5572;*/
 
+html,body{
+	overflow-x: hidden;
+	width:100%;
+}
+
 body{
 	font-family: 'Roboto', sans-serif;
 	color:#66625B;
@@ -477,7 +482,7 @@ img{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../../assets/images/loading.gif') center no-repeat #fff;
+	background: url('../../assets/images/laoding.gif') center no-repeat #fff;
 }
 
 .wrapper{
@@ -711,6 +716,7 @@ img{
 		background-attachment: fixed;
 		color: white;
 		position: relative;
+		width:100%;
 		
 	}
 
@@ -1483,7 +1489,7 @@ img{
 
 	}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .site-header{
 		background-color: transparent;
@@ -1515,7 +1521,7 @@ img{
 		transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 	}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 			.site-header--dark .site-header__logo {
 				-webkit-transform:scale(0.92);
@@ -1535,7 +1541,7 @@ img{
 		position: relative;
 	}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .site-header__menuContent{
 			opacity: 1;
@@ -1603,7 +1609,7 @@ img{
 			transition: all 0.3s ease-out;
 		}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .site-header__menuIcon{
 			display: none
@@ -1631,7 +1637,7 @@ img{
 	/*&__5th-item{
 		margin-left:55px;
 
-		@mixin mobile{
+		@mixin tablet{
 			margin-left: 0;
 		}
 	}
@@ -1639,7 +1645,7 @@ img{
 	&__6th-item{
 		margin-left:20px;
 
-		@mixin mobile{
+		@mixin tablet{
 			margin-left: 0;
 		}
 		
@@ -1648,7 +1654,7 @@ img{
 
 }
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .primary-nav__pull_right{
 			float: right
@@ -1671,10 +1677,10 @@ img{
 		/*display: inline-block;*/
 		padding:20px 0;
 		text-align: left;
-		margin-left: 37vw;
+		margin-left:37vw;
 	}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .primary-nav li{
 			float: left;
@@ -1697,7 +1703,7 @@ img{
 		text-transform: uppercase;
 	}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .primary-nav a{
 			font-size:0.8rem
@@ -1726,7 +1732,7 @@ img{
 		  left:24vw;
 	}
 
-@media (min-width:550px){
+@media (min-width:730px){
 
 .primary-nav__icon{
 			display:none !important
@@ -2152,6 +2158,7 @@ img{
 
 .layer .content-wrap{
 	 text-align: center;
+	 padding-bottom:3rem;
 }
 
 @media (min-width:960px){
@@ -2159,7 +2166,8 @@ img{
 .layer .content-wrap{
 		 position: absolute;
 		 width:100vw;
-		 min-height: 55vw
+		 min-height:55vw;
+		 padding-bottom:0
 }
 	}
 
@@ -2442,3 +2450,18 @@ img{
 
 
 */
+
+.contact{
+	position: relative;
+}
+
+.contact__textContent{
+		position: absolute;
+		top:60%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+		left:0;
+		width:100%;
+		text-align:center;
+		
+	}

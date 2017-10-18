@@ -24,6 +24,7 @@
 		background-attachment: fixed;
 		color: white;
 		position: relative;
+		width:100%;
 
 		@mixin tablet{
 			height:380px;

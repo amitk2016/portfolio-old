@@ -105,10 +105,12 @@
 
 .layer .content-wrap{
 	 text-align: center;
+	 padding-bottom:3rem;
 	@mixin desktop{
 		 position: absolute;
 		 width:100vw;
-		 min-height: 55vw;
+		 min-height:55vw;
+		 padding-bottom:0;
 	}
 }
 

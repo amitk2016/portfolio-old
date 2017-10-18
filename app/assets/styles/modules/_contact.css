@@ -1,0 +1,13 @@
+.contact{
+	position: relative;
+
+	&__textContent{
+		position: absolute;
+		top:60%;
+		transform: translateY(-50%);
+		left:0;
+		width:100%;
+		text-align:center;
+		
+	}
+}

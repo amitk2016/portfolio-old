@@ -3,7 +3,7 @@
 	&__pull_right{
 		
 
-		@mixin mobile{
+		@mixin tablet{
 			float: right;
 		}
 	}
@@ -19,8 +19,9 @@
 		/*display: inline-block;*/
 		padding:20px 0;
 		text-align: left;
-		margin-left: 37vw;
-		@mixin mobile{
+		margin-left:37vw;
+		
+		@mixin tablet{
 			float: left;
 			display: block;
 			margin-bottom:0;
@@ -39,7 +40,7 @@
 		text-transform: uppercase;
 
 
-		@mixin mobile{
+		@mixin tablet{
 			font-size:0.8rem;
 			/*color:white;*/
 			
@@ -65,7 +66,7 @@
 		  color: rgba(255,255,255,.6);
 		  position: absolute;
 		  left:24vw;
-		@mixin mobile{
+		@mixin tablet{
 			display:none !important;
 		}
 	}
@@ -73,7 +74,7 @@
 	/*&__5th-item{
 		margin-left:55px;
 
-		@mixin mobile{
+		@mixin tablet{
 			margin-left: 0;
 		}
 	}
@@ -81,7 +82,7 @@
 	&__6th-item{
 		margin-left:20px;
 
-		@mixin mobile{
+		@mixin tablet{
 			margin-left: 0;
 		}
 		

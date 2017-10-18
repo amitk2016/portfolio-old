@@ -11,7 +11,7 @@
 
 	}
 
-	@mixin mobile{
+	@mixin tablet{
 		background-color: transparent;
 		position: fixed;
 		z-index:5;
@@ -34,7 +34,7 @@
 		top:10px;
 		transition: transform 0.3s ease-out;
 
-		@mixin mobile{
+		@mixin tablet{
 
 			.site-header--dark & {
 				transform:scale(0.92);
@@ -52,7 +52,7 @@
 		transform: scale(1.2);
 		position: relative;
 
-		@mixin mobile{
+		@mixin tablet{
 			opacity: 1;
 			z-index: 1;
 			padding-top: 0;
@@ -108,7 +108,7 @@
 			transition: all 0.3s ease-out;
 		}
 
-		@mixin mobile{
+		@mixin tablet{
 			display: none;
 		}
 	}
