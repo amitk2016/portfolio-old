@@ -14,7 +14,7 @@
 		i{
 			color:#ccc;
 			 &:hover{
-			 	color:#c9510c;
+			 	color:$mainYellow;
 			 }
 		}
 	}
