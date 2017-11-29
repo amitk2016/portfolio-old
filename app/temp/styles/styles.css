@@ -513,6 +513,10 @@ img{
 		
 	}
 
+.wrapper--narrow {
+    max-width:500px;
+  }
+
 .wrapper__centered{
 		text-align:center;
 	}
@@ -1845,9 +1849,13 @@ img{
 .modal__first-headline,.modal__second-headline,.modal__third-headline,.modal__fourth-headline,.modal__fifth-headline,.modal__sixth-headline{
 		font-size:1.9rem;
 		font-weight:400;
-		text-align: center;
+		text-align:center;
 		text-transform: uppercase;
 	}
+
+.modal__first-headline i,.modal__second-headline i,.modal__third-headline i,.modal__fourth-headline i,.modal__fifth-headline i,.modal__sixth-headline i{
+			margin-right: 1rem;
+		}
 
 @media (min-width:550px){
 

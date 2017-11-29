@@ -47,8 +47,12 @@
 	&-headline{
 		font-size:1.9rem;
 		font-weight:400;
-		text-align: center;
+		text-align:center;
 		text-transform: uppercase;
+
+		i{
+			margin-right: 1rem;
+		}
 
 		@mixin mobile{
 			font-size:2.2rem;
